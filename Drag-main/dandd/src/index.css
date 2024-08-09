@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 font-sans;
+}
+
+body {
+  background-color: #afd0f1; /* Light color for the background */
+}
+
+.app {
+  @apply p-8 flex flex-col items-center;
+}
+
+.left-container {
+  @apply flex flex-col mt-8;
+}
+
+.center-drop-area {
+  @apply mt-8 w-full max-w-3xl;
+}
+
+.draggable-item {
+  @apply p-4 m-2 text-white rounded-md shadow-md cursor-pointer transition-transform transform hover:scale-105;
+}
+
+.drop-area {
+  @apply w-full h-64 border-2 border-dashed border-gray-300 flex items-center justify-center mt-4 rounded-md bg-white text-black overflow-auto;
+}
+
+.dropped-item {
+  @apply p-4 m-2 rounded-md shadow-md;
+}
+
+.item-list {
+  @apply mt-8;
+}
+
+.list-item {
+  @apply p-4 m-2 bg-gray-200 rounded-md shadow-md;
+}
+
+.bg-red-500 {
+  background-color: #f87171;
+}
+.bg-red-700 {
+  background-color: #ef4444;
+}
+.bg-red-900 {
+  background-color: #dc2626;
+}
